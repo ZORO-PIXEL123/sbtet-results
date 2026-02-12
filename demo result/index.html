@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>SBTET Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP ACCESSIBILITY BAR -->
+<div class="top-bar">
+    <span>A+</span>
+    <span>A</span>
+    <span>A-</span>
+    <span>Screen Reader</span>
+    <span>Skip to Main Content</span>
+</div>
+
+<!-- HEADER SECTION -->
+<div class="header">
+    <div class="logo-left">
+        <img src="logo1.png" alt="Logo">
+    </div>
+
+    <div class="header-title">
+        <h2>STATE BOARD OF</h2>
+        <h1>TECHNICAL EDUCATION & TRAINING</h1>
+    </div>
+
+    <div class="logo-right">
+        <img src="logo2.png" alt="Logo">
+    </div>
+</div>
+
+<div class="color-line"></div>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+    <div class="form-box">
+        <h2>Diploma C23 Results</h2>
+
+        <label>PIN:</label>
+        <input type="text" id="pin">
+
+        <label>Enter Semester:</label>
+        <select id="semester">
+            <option value="">--Select Semester--</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+
+        <button onclick="showResult()">SUBMIT</button>
+    </div>
+</div>
+
+<!-- RESULT PAGE -->
+<div id="resultPage" style="display:none;">
+    <div class="result-box">
+        <h3>Diploma Results</h3>
+        <p><strong>PIN:</strong> 24270-CM-027</p>
+        <p><strong>Name:</strong> A VENKATA NARAYAN</p>
+        <p><strong>Branch:</strong> DIPLOMA IN COMPUTER ENGINEERING</p>
+        <p><strong>Grand Total:</strong> 788</p>
+        <p><strong>GPA:</strong> 8.67</p>
+        <p><strong>Result:</strong> PASS</p>
+        <p><strong>Month & Year:</strong> OCT/NOV 2025</p>
+
+        <button onclick="goBack()">Back</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
